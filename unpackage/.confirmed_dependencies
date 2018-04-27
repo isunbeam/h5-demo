@@ -1,0 +1,67 @@
+{
+  "index.html": {
+    "refer": [
+      "Barcode.html",
+      "gallery.html",
+      "camera.html",
+      "contacts.html",
+      "audio.html",
+      "io.html",
+      "geolocation.html",
+      "zip.html",
+      "orientation.html",
+      "orientation-mx.html",
+      "nativeUI.html"
+    ]
+  },
+  "Barcode.html": {
+    "refer": [
+      "Barcode-scan.html",
+      "Barcode-choose.html",
+      "index.html"
+    ]
+  },
+  "gallery.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "camera.html": {
+    "refer": [
+      "index.html"
+    ],
+    "resources": [
+      "index.html"
+    ]
+  },
+  "contacts.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "io.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "geolocation.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "zip.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "audio.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "orientation-mx.html": {
+    "refer": [
+      "index.html"
+    ]
+  }
+}

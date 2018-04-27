@@ -1,0 +1,55 @@
+p {
+  margin-bottom: 0;
+}
+.bradiu {
+  border-radius: 6px;
+}
+#comTop {
+  background: deepskyblue;
+}
+#comTop a,
+#comTop h1 {
+  color: white;
+}
+.mui-content {
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+.mui-content .comBtn {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: deepskyblue;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.com-tel {
+  margin-bottom: 10px;
+}
+.com-tel .arrow {
+  width: 40px;
+  height: 40px;
+  margin-left: 80px;
+}
+.com-tel .znz {
+  width: 200px;
+}
+.com-tel .com-img {
+  position: relative;
+}
+.com-tel .com-img .quan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.com-tel .com-img .spy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

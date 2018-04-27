@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/io/io.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" id="comTop">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">contacts</h1>
+		</header>
+		<div class="mui-content">
+			<div class="comBtn mui-text-center" >
+				获取手机通讯录
+			</div>
+			<div class="comBtn mui-text-center" >
+				获取SIM卡通讯录
+			</div>
+			<div class="comBtn mui-text-center" >
+				查询联系人（默认手机中的通讯录）
+			</div>
+			<div class="comBtn mui-text-center" >
+				增加联系人（默认手机中的通讯录）
+			</div>
+			<div class="comBtn mui-text-center" >
+				删除联系人（默认手机中的通讯录）
+			</div>
+			<p>如果不给获取通讯录的权限，程序还是能运行，但是获取不了联系人哦。怎样判断没有设置联系人权限暂时还不清楚</p>
+			<p style="margin-top: 8px;">获取到的内容不是手机上从首字母A开始到Z结束，是根据返回数据的id来排列的，id是怎么来的我也不清楚。</p>
+			<p style="margin-top: 8px;">通讯录怎样排序，从首字母A到Z这个问题也没有解决</p>
+			<p style="margin-top: 8px;">如果通讯录里某个联系人只有名字没有电话，真机调试控制台会报错,而如果只有手机号码却没名字是不会报错的</p>
+			<p style="margin-top: 8px;">只显示名字和电话</p>
+			<div class="user">
+				<p>一共<span id="unum">0</span>人</p>
+				<ul class="mui-table-view">
+					
+			    </ul>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
+
+<script type="text/javascript" src="js/mui.min.js" ></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+<script type="text/javascript" src="js/contacts/contacts.js" ></script>

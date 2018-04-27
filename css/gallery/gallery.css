@@ -1,0 +1,38 @@
+p {
+  margin-bottom: 0;
+}
+.bradiu {
+  border-radius: 6px;
+}
+#comTop {
+  background: deepskyblue;
+}
+#comTop a,
+#comTop h1 {
+  color: white;
+}
+.mui-content {
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+.mui-content .comBtn {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: deepskyblue;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+.box {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  overflow: hidden;
+}
+.box img {
+  width: 100%;
+}

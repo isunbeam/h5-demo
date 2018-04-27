@@ -1,0 +1,35 @@
+p{
+    margin-bottom: 0;
+}
+@theme:deepskyblue;
+@bg:#efeff4;
+
+.bradiu{
+    border-radius: 6px;
+}
+#comTop{
+    background: @theme;
+    a,h1{
+        color: white;
+    }
+}
+.lineH(@height){
+    height: @height;
+    line-height: @height;
+}
+.mui-content{
+    width: 100%;
+    height: inherit;
+    position: relative;
+    .comBtn{ 
+        width:80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        background: @theme;
+        color: white;
+        .lineH(40px);
+        .bradiu;
+        font-size:13px;
+        
+    }
+} 
