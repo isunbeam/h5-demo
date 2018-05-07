@@ -10,23 +10,21 @@ var barcodeObj=null;
 function sao(){
 	$("#cid").show();
 	
-	mui.plusReady(function(){
-		//	var filter=null;//要识别的条码类型过滤器
-		var _style={
-			frameColor:"rgb(0,191,255)",
-			scanbarColor:"rgb(0,191,255)"
-		}
-		barcodeObj=new plus.barcode.Barcode("cid",_style);
+	//	var filter=null;//要识别的条码类型过滤器
+	var _style={
+		frameColor:"rgb(0,191,255)",
+		scanbarColor:"rgb(0,191,255)"
+	}
+	barcodeObj=new plus.barcode.Barcode("cid",_style);
 
-		barcodeObj.start({
-			conserve:"true",//是否保存成功扫描到的条码数据时的截图，通过onmarked回调函数的file参数返回保存文件的路径,默认为false不保存
-			filename:"_doc/barcode/",//上一个参数设置为true之后才起作用。设置保存截图的路径或名称。如果要修改保存图片的名称则必须指定文件的后缀名（必须是.png），否则认为是保存到指定的目录，图片名称则自动生成
-			vibrate:"true",//成功扫描到条码数据时是否需要震动提醒,默认不开启
-			sound:"true",//成功扫描到条码数据时播放的提示音类型，默认不开启
-		});
-		barcodeObj.onmarked=onmarked; 
-		barcodeObj.onerror =onerror ;
-	})
+	barcodeObj.start({
+		conserve:"true",//是否保存成功扫描到的条码数据时的截图，通过onmarked回调函数的file参数返回保存文件的路径,默认为false不保存
+		filename:"_doc/barcode/",//上一个参数设置为true之后才起作用。设置保存截图的路径或名称。如果要修改保存图片的名称则必须指定文件的后缀名（必须是.png），否则认为是保存到指定的目录，图片名称则自动生成
+		vibrate:"true",//成功扫描到条码数据时是否需要震动提醒,默认不开启
+		sound:"true",//成功扫描到条码数据时播放的提示音类型，默认不开启
+	});
+	barcodeObj.onmarked=onmarked; 
+	barcodeObj.onerror =onerror ;
 }
 
 function onmarked( type, result, file ) {

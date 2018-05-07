@@ -22,8 +22,10 @@ function getImage(){
 
 function getVideo(){
 	var cameraObj = plus.camera.getCamera();
-	cameraObj.startVideoCapture(function(path){
-		plus.gallery.save(path, function(e){
+	cameraObj.startVideoCapture(function(p){
+		console.log(p)
+		plus.gallery.save(p, function(e){
+			console.log(JSON.stringify(e))
 			mui.alert('保存成功'+e.file);
 			plus.io.resolveLocalFileSystemURL(e.file,function(entry){
 				var _url=entry.toRemoteURL();//把路径转换为http://localhost:13131/...这样的网络路径

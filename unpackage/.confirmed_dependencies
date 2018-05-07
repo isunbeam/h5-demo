@@ -63,5 +63,15 @@
     "refer": [
       "index.html"
     ]
+  },
+  "nativeUI.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "orientation.html": {
+    "refer": [
+      "index.html"
+    ]
   }
 }
